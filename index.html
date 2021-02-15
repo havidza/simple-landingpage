@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Enak- Solusi Memasak Cepat dan Enak</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav" id="myNav">
+            <div class="nav-logo">
+                <a href="#"><img src="assets/img/LOGO.png" alt="logo" width="80px"></a>
+            </div>
+            <a href="#home" class="active">Home</a>
+            <a href="#today-menu">Menu Hari Ini</a>
+            <a href="#popular-menu">Menu Populer</a>
+            <a href="#contact">Hubungi Kami</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <div class="banner">
+                <img src="assets/img/vegetables.jpg" alt="" width="100%">
+                <div class="search">
+                    <br><br>
+                    <h3>CARI SEMUA RESEP</h3>
+                    <input type="text" class="" placeholder="Mau makan apa hari ini ?">
+                    <input type="submit" value="Submit"> <br><br><br><br><br>
+                </div>
+            </div>
+
+            <!-- Menu Hari Ini -->
+            <div class="today-menu" id="today-menu"><br>
+                <h4>MENU HARI INI</h4> <br>
+                <h3 id="displayDateTime"></h3><br>
+                <script type="text/javascript">
+                  var today = new Date();
+                  var day = today.getDay();
+                  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+                  var date = +today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+                  var dateTime = date+' ';
+                   
+                  document.getElementById("displayDateTime").innerHTML = dateTime;
+ 
+                </script>
+                <center>
+                    <hr style="width: 10%;">
+                </center><br><br>
+                <div class="card">
+                    <div class="column">
+                        <div class="card-back">
+                            <img src="assets/img/opor.jpg" alt="Opor" width="100%"><br><br>
+                            <h3>OPOR AYAM</h3> <br>
+                            <article>
+                                <p>Opor Ayam dengan cita rasa khas nusantara dipadukan dengan bahan bahan pilihan.</p>
+                                <br>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card-back">
+                            <img src="assets/img/tumis-kangkug.jpg" alt="" width="100%"><br><br>
+                            <h3>TUMIS KANGKUNG</h3><br>
+                            <article>
+                                <p>Tumis Kangkung dengan cita rasa khas nusantara dipadukan dengan bahan bahan pilihan.
+                                </p>
+                                <br>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card-back">
+                            <img src="assets/img/tempe-goreng.jpg" alt="tempe-goreng" width="100%"><br><br>
+                            <h3>TEMPE GORENG</h3><br>
+                            <article>
+                                <p>Tempe Goreng dengan cita rasa khas nusantara dipadukan dengan bahan bahan pilihan.
+                                </p>
+                                <br>
+                            </article>
+                        </div>
+                    </div>
+                </div><br><br>
+            </div>
+
+            <!-- Quote -->
+            <div class="quote">
+                <img src="assets/img/quote.jpg" alt="quote" width="100%"><br><br><br>
+            </div>
+
+            <!-- Popular Menu -->
+            <div class="popular-menu" id="popular-menu"><br>
+                <h4>MENU POPULER</h4> <br>
+                <center>
+                    <hr style="width: 10%;">
+                </center><br><br>
+                <div class="card">
+                    <div class="column">
+                        <div class="card-back">
+                            <img src="assets/img/ayam-goreng.jpg" alt="ayam-goreng" width="100%"><br><br>
+                            <h3>AYAM GORENG</h3> <br>
+                            <article>
+                                <p>Ayam Goreng dengan cita rasa khas nusantara dipadukan dengan bahan bahan pilihan.</p>
+                                <br>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card-back">
+                            <img src="assets/img/sayur-bayam.jpg" alt="sayur-bayam" width="100%"><br><br>
+                            <h3>SAYUR BAYAM</h3> <br>
+                            <article>
+                                <p>Sayur Bayam dengan cita rasa khas nusantara dipadukan dengan bahan bahan pilihan.</p>
+                                <br>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card-back">
+                            <img src="assets/img/sate-ayam.jpg" alt="sate-ayam" width="100%"><br><br>
+                            <h3>SATE AYAM</h3> <br>
+                            <article>
+                                <p>Sate Ayam dengan cita rasa khas nusantara dipadukan dengan bahan bahan pilihan.</p>
+                                <br>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="quote2">
+                <img src="assets/img/vegetables3.jpg" alt="quote" width="100%">
+            </div> <br><br><br>
+
+            <!-- Hubungi Kami -->
+            <div class="contact" id="contact"><br>
+                <h4>HUBUNGI KAMI</h4> <br>
+                <center>
+                    <hr style="width: 10%;">
+                    <br><br>
+                    <div class="form">
+                        <input type="text" class="" placeholder="Nama">
+                        <input type="text" class="" placeholder="Alamat Email">
+                        <input type="text" class="" placeholder="Nama Menu">
+                        <textarea name="" id="" placeholder="Deskripsikan tentang menu anda"></textarea>
+                        <br><br>
+                        <input type="submit" value="Kirim">
+                    </div><br><br></BR>
+                </center>
+            </div>
+
+            <!-- Biodata -->
+           <!--  <h4>BIODATA</h4> <br>
+            <center>
+                <hr style="width: 10%;">
+                <br><br>
+                <aside>
+                    <img src="assets/img/bio.jpg" alt="fotoku" width="100%">
+                    <div class="bio">
+                        <br>
+                        <h3>Havid Zaeni Al Muttaqien</h3><br>
+                        <h3>Surakarta</h3>
+                    </div>
+                </aside>
+            </center>
+ -->
+            <br><br>
+            <footer>
+                <h4>Enak - Solusi Memasak Enak dan Cepat &copy; 2020, Havid Zaeni Al Muttaqien</h4>
+            </footer>       
+        </div>
+    </main>
+    <script src="assets/js/navbar.js"></script>
+</body>
+
+</html>
